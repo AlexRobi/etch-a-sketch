@@ -1,0 +1,35 @@
+@media (min-width: 576px) {
+  #grid {
+    height: 576px!important;
+    width: 576px!important;
+  }
+}
+
+@media (min-width: 768px) {
+  #grid {
+    height: 768px!important;
+    width: 768px!important;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+#grid {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  padding: 0 15px 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cell {
+  border: 1px solid black;
+}
