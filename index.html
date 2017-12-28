@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Etch-a-Sketch</title>
+  <title>Etch-A-Sketch</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
     integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
@@ -16,13 +16,33 @@
 
 <body>
 
-  <h1 class="text-center mt-3"></i>Etch-a-Sketch <i class="fas fa-pencil-alt"></i></h1>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark container-fluid">
+    <a class="navbar-brand" href="#">Etch-A-Sketch</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://github.com/AlexRobi/etch-a-sketch">View on github</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://github.com/AlexRobi">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1 class="text-center mt-3"></i>Etch-A-Sketch <i class="fas fa-pencil-alt"></i></h1>
 
   <div class="input-group col-10 col-lg-6 col-xl-4 mx-auto mb-2">
     <span class="input-group-addon">Grid Size</span>
-    <input type="number" placeholder="Enter a number. Ex:12" id="input-grid-size" class="form-control"
+    <input type="number" placeholder="Enter a number. Ex: 10" id="input-grid-size" class="form-control"
       name="Grid-size" value="" />
   </div>
+
+  <div id="error-container" class="textCenter"></div>
 
   <div class="text-center mb-3">
     <button id="color-trail" type="button" class="btn btn-primary">Random Color Trail</button>
@@ -31,6 +51,7 @@
       <span id="color-span">Color on click:</span>
       <input type="color" id="color-input" />
     </div>
+    <button id="toggle-grid" type="button" class="btn btn-primary">Grid: OFF</button>
     <button id="clear-grid" type="button" class="btn btn-primary">Reset</button>
   </div>
 
@@ -41,6 +62,13 @@
     <a href="#"><i class="fab fa-facebook-square"></i></a>
     <a href="#"><i class="fab fa-github-square"></i></a>
   </div>
+
+  <footer class="d-flex justify-content-between container mt-3">
+    <p>
+      This is the <a target="_blank" href="https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project">
+        Project: Etch-A-Sketch</a> from The Odin Project, Web Development 101.
+    </p>
+  </footer>
 
   <script src="script.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
